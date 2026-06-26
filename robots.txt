@@ -1,0 +1,38 @@
+# robots.txt для Anti-AI Qwen UAV Simulator - Урок 20: Архитектор
+# https://anti-ai-qwen-uav-simulator-lesson-2-nu.vercel.app/
+
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /.vercel/
+
+# Разрешаем индексацию всех ресурсов
+Allow: /favicon.ico
+Allow: /uav-operator.jpg
+Allow: /arhitektor-theme.mp3
+
+# Указываем на карту сайта
+Sitemap: https://anti-ai-qwen-uav-simulator-lesson-2-nu.vercel.app/sitemap.xml
+
+# Специфичные правила для поисковых систем
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Запрещаем доступ к служебным файлам
+User-agent: *
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /vercel.json
+Disallow: /.git/
+Disallow: /.env
